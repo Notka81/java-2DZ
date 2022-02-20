@@ -12,10 +12,10 @@ class ProductList {
 
     _fetchGoods() {
         this._goods = [
-            {id: 1, title: 'Notebook', price: 20000},
-            {id: 2, title: 'Mouse', price: 1500},
-            {id: 3, title: 'Keyboard', price: 5000},
-            {id: 4, title: 'Gamepad', price: 4500},
+            { id: 1, title: 'Notebook', price: 20000 },
+            { id: 2, title: 'Mouse', price: 1500 },
+            { id: 3, title: 'Keyboard', price: 5000 },
+            { id: 4, title: 'Gamepad', price: 4500 },
         ];
     }
 
@@ -50,6 +50,27 @@ class ProductItem {
 }
 
 new ProductList();
+
+class ProductBasket {
+    constructor() {
+        // наименование продукта
+        // цена
+        // количество
+        //сумма
+
+    }
+
+}
+//Обработчик открытия корзины при клике на ее значок.
+
+//Если такого продукта еще не было добавлено в наш объект, который хранит
+// все добавленные товары, то создаем новый объект.
+function GoodsList() {
+    return Object
+        .values(basket)
+        .reduce((acc, product) => acc + product.price * product.count, 0);
+}
+
 
 // const products = [
 //   {id: 1, title: 'Notebook', price: 20000},
